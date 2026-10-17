@@ -12,7 +12,7 @@ cursor-style = block
 cursor-style-blink = false
 
 background = 2d2475
-foreground = e6e2f7
+foreground = fbf9ff
 cursor-color = ffd400
 cursor-text = 2d2475
 selection-background = 4a3c9a
@@ -25,8 +25,8 @@ palette = 3=#ffd400
 palette = 4=#9a8df0
 palette = 5=#c46fc4
 palette = 6=#4fc9e8
-palette = 7=#e6e2f7
-palette = 8=#7f72c8
+palette = 7=#f4f1ff
+palette = 8=#a9a0e6
 palette = 9=#ff6a5a
 palette = 10=#7fdc72
 palette = 11=#ffe666
