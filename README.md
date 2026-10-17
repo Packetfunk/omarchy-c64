@@ -54,5 +54,8 @@ Restore your backups (`foot.ini.bak.*`, `config.bak.*`) and run `omarchy default
     ghostty/status-term [--app-id=ID] command [args...]
 
 It runs its own Ghostty process (`--gtk-single-instance=false`) so it does not affect the normal
-profile. Note: omarchy-layouts restores Ghostty windows as plain `ghostty +new-window`, so after a
-reboot these windows come back in the normal profile unless you relaunch them with `status-term`.
+profile.
+
+Session resume: stock omarchy-layouts restores Ghostty windows with `ghostty +new-window`, which
+drops this profile. A small patch to `terminal_launch_command` in omarchy-layouts keeps `--config-file`
+(and the own-process flag) for windows launched this way, so the profile survives a reboot.
