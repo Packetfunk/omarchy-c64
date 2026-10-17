@@ -1,6 +1,6 @@
 # C64 modern-retro Ghostty config. Launch: ghostty --config-file=~/Projects/omarchy-c64/ghostty/config
 font-family = "Space Mono"
-font-size = 9
+font-size = 10
 adjust-cell-height = 12%
 
 window-padding-x = 14
