@@ -1,0 +1,38 @@
+# C64 modern-retro Ghostty config. Launch: ghostty --config-file=~/Projects/omarchy-c64/ghostty/config
+font-family = "Space Mono"
+font-size = 9
+adjust-cell-height = 12%
+
+window-padding-x = 14
+window-padding-y = 14
+window-theme = ghostty
+confirm-close-surface = false
+resize-overlay = never
+cursor-style = block
+cursor-style-blink = false
+
+background = 2d2475
+foreground = e6e2f7
+cursor-color = ffd400
+cursor-text = 2d2475
+selection-background = 4a3c9a
+selection-foreground = ffffff
+
+palette = 0=#2d2475
+palette = 1=#e8402f
+palette = 2=#55b84a
+palette = 3=#ffd400
+palette = 4=#9a8df0
+palette = 5=#c46fc4
+palette = 6=#4fc9e8
+palette = 7=#e6e2f7
+palette = 8=#7f72c8
+palette = 9=#ff6a5a
+palette = 10=#7fdc72
+palette = 11=#ffe666
+palette = 12=#bdb4ff
+palette = 13=#e69be6
+palette = 14=#8ae4ff
+palette = 15=#ffffff
+
+custom-shader = /home/hawklan/Projects/omarchy-c64/ghostty/crt.glsl
