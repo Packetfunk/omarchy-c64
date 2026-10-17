@@ -35,4 +35,4 @@ palette = 13=#e69be6
 palette = 14=#8ae4ff
 palette = 15=#ffffff
 
-custom-shader = /home/hawklan/Projects/omarchy-c64/ghostty/crt.glsl
+custom-shader = crt.glsl

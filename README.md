@@ -27,8 +27,17 @@ wallpaper or other apps.
 
     config-file = /path/to/omarchy-c64/ghostty/config
 
-`ghostty/config` hardcodes `custom-shader` to `/home/hawklan/...`; edit that path to match your clone.
-Then `omarchy default terminal ghostty` if you want it as the Super+Enter terminal.
+Bind it to a key, e.g. in `~/.config/hypr/bindings.lua`:
+
+    o.bind("SUPER + ALT + SHIFT + RETURN", "Terminal (Ghostty CRT)", { launch = "ghostty" })
+
+### Session resume (omarchy-layouts)
+
+Keep **foot** as the default terminal (`omarchy default terminal foot`). The
+[omarchy-layouts](https://github.com/Packetfunk) plugin only saves scrollback and working directory
+for foot windows, because each foot window is its own process. Ghostty started by Omarchy's
+launcher runs as one shared single-instance process, so its windows are restored in the right place
+but empty. Use Ghostty as an opt-in CRT terminal.
 
 Open new terminal windows afterwards. Existing windows keep their old colours, and a running
 `tmux -L omarchy-layouts` server must be restarted to pick up new colours.
