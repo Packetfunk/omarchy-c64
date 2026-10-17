@@ -27,9 +27,9 @@ wallpaper or other apps.
 
     config-file = /path/to/omarchy-c64/ghostty/config
 
-Bind it to a key, e.g. in `~/.config/hypr/bindings.lua`:
+Bind it to a key (code:191 is the 8BitDo [A] button, F13; its keysym is XF86Tools), e.g. in `~/.config/hypr/bindings.lua`:
 
-    o.bind("F13", "Terminal (Ghostty CRT)", { launch = "ghostty" })
+    o.bind("code:191", "Terminal (Ghostty CRT)", { launch = "ghostty" })
 
 ### Session resume (omarchy-layouts)
 
