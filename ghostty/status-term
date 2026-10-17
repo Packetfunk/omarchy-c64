@@ -1,0 +1,7 @@
+#!/bin/bash
+# Run a command in a Ghostty window using the "status screen" profile.
+# usage: status-term [--app-id=ID] command [args...]
+dir="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+app_id="org.omarchy.status"
+if [[ ${1:-} == --app-id=* ]]; then app_id="${1#--app-id=}"; shift; fi
+exec ghostty --config-file="$dir/config-status" --class="$app_id" --gtk-single-instance=false -e "$@"

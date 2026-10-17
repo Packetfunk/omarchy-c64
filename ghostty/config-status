@@ -1,0 +1,33 @@
+# "Status screen" profile for btop / disk usage: C64 brown, big font, heavy CRT.
+# Loaded on top of the default Ghostty config, so every colour is restated here.
+font-size = 13
+window-padding-x = 20
+window-padding-y = 20
+
+background = 2b211d
+foreground = f4efe6
+cursor-color = f5c542
+cursor-text = 2b211d
+selection-background = 59483f
+selection-foreground = fffaf2
+
+palette = 0=#2b211d
+palette = 1=#e31b2d
+palette = 2=#55a94a
+palette = 3=#f5c542
+palette = 4=#5c8fb5
+palette = 5=#b7687b
+palette = 6=#1da1d2
+palette = 7=#e4d8ca
+palette = 8=#78685d
+palette = 9=#ff4454
+palette = 10=#78c96b
+palette = 11=#ffe06b
+palette = 12=#82b6d8
+palette = 13=#da8ca0
+palette = 14=#52c7ef
+palette = 15=#fffaf2
+
+# empty value clears the inherited shader list, then add the heavy one
+custom-shader =
+custom-shader = crt-heavy.glsl

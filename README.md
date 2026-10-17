@@ -45,3 +45,14 @@ Open new terminal windows afterwards. Existing windows keep their old colours, a
 ## Revert
 
 Restore your backups (`foot.ini.bak.*`, `config.bak.*`) and run `omarchy default terminal foot`.
+
+## Status-screen profile (btop / disk usage)
+
+`ghostty/config-status` + `ghostty/crt-heavy.glsl` give a brown C64 look with a heavier CRT
+(strong scanlines, colour fringe, bloom, vignette) and a bigger font. Launch any command in it with:
+
+    ghostty/status-term [--app-id=ID] command [args...]
+
+It runs its own Ghostty process (`--gtk-single-instance=false`) so it does not affect the normal
+profile. Note: omarchy-layouts restores Ghostty windows as plain `ghostty +new-window`, so after a
+reboot these windows come back in the normal profile unless you relaunch them with `status-term`.
