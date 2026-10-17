@@ -29,7 +29,7 @@ wallpaper or other apps.
 
 Bind it to a key, e.g. in `~/.config/hypr/bindings.lua`:
 
-    o.bind("SUPER + ALT + SHIFT + RETURN", "Terminal (Ghostty CRT)", { launch = "ghostty" })
+    o.bind("SUPER + F13", "Terminal (Ghostty CRT)", { launch = "ghostty" })
 
 ### Session resume (omarchy-layouts)
 
