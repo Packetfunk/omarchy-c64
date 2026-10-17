@@ -34,7 +34,7 @@ Bind it to a key, e.g. in `~/.config/hypr/bindings.lua`:
 ### Session resume (omarchy-layouts)
 
 Keep **foot** as the default terminal (`omarchy default terminal foot`). The
-[omarchy-layouts](https://github.com/Packetfunk) plugin only saves scrollback and working directory
+omarchy-layouts plugin only saves scrollback and working directory
 for foot windows, because each foot window is its own process. Ghostty started by Omarchy's
 launcher runs as one shared single-instance process, so its windows are restored in the right place
 but empty. Use Ghostty as an opt-in CRT terminal.
